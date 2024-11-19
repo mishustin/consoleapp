@@ -23,6 +23,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ConsoleApp/ConsoleApp.sln
     - name: Build
-      run: dotnet build ConsoleApp/ConsoleApp.sln --no-restore
+      run: dotnet build ConsoleApp/ConsoleApp.sln -c release --no-restore
     - name: Test
       run: dotnet test ConsoleApp/ConsoleApp.sln --no-build --verbosity normal
